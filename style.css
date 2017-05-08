@@ -1,0 +1,173 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: royalblue;
+    color: #fff;
+    height: 100%;
+    /*margin-top: -20px;*/
+}
+
+.homepage-flex-container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+header h1 {
+    font-size: 44px;
+    text-align: left;
+    flex-grow: 2;
+    margin-left: 20px;
+    font-weight: 500;
+    /*padding: 20px 0px 20px 50px;*/
+}
+
+header form {
+    /*position: relative;*/
+    text-align: left;
+    flex-grow: 1;
+
+}
+
+header input[type=text], header input[type=password] {
+    padding: 3px;
+    margin-right: 10px;
+}
+
+header label {
+    font-weight: 500;
+
+}
+
+header input[type=submit] {
+    background-color: #9bbcee;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.deck {
+    line-height: 2.5em;
+    align-self: center;
+    position: relative;
+    top: -50px;
+}
+
+.deck li {
+    color: #666;
+}
+
+#homepage-flex-container-body {
+    margin-top: ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#homepage-flex-container-body h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#homepage-flex-container-body input {
+    width: 95%;
+    margin: 7px;
+    padding: 5px 0px;
+    border: 2.5px solid #cbcbcb;
+    border-radius: 3px;
+    padding-left: 5px;
+    color: #666;
+}
+
+
+#homepage-flex-container-body select {
+    float: left;
+    color: #666;
+    padding: 6px;
+    margin-right: 7px;
+}
+
+#homepage-flex-container-body input[type=radio] {
+    color: #666;
+    margin: 0px;
+    padding: 2px;
+}
+
+#radio-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    align-content: flex-start;
+}
+
+#homepage-flex-container-body input[type=submit] {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #3d8033;
+    width: 90%;
+    padding: 10px 0px;
+    margin: 5px auto;
+    display: block;
+}
+
+@media screen and (max-width: 940px) {
+
+    #homepage-flex-container-body {
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    header h1, header form {
+        margin: auto 50%;
+    }
+
+    .deck {
+        position: static;
+    }
+
+}
+
+/*#flex-table-row-wrapper {*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+/*}*/
+
+@media screen and (max-width: 510px) {
+
+    header form td {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

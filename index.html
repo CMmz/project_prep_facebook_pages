@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+Issues:
+
+Couldn't get the radio buttons/labels to zero their padding/margins
+
+Login form requires a horizontal scroll / looks bad on phone screen sizes
+
+-->
+
+<!--Slow early progress but it mostly came together at the end. Moving the layout into position makes things feel closer to the goal and should be done earlier on. It's the details that take forever to get right (constant refreshes and feedback checks)-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facelook: Your face, for the world to admire</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+</head>
+
+
+<body>
+
+
+<header class="homepage-flex-container-header">
+    
+    <h1 id="text-logo">Facelook</h1>
+
+    <form action="post" id="sign-in">
+        <table>
+
+            <!--<div id="flex-table-row-wrapper">-->
+
+            <tr>
+                <td><label for="login-email-username">Email</label></td>
+                <td><label for="login-password">Password</label></td>
+            </tr>                
+            
+            <tr>            
+                <td><input type="text" id="login-email-username" /></td>
+                <td><input type="password" id="login-password" /></td>
+                <td><input type="submit" value="Log In"></td>
+            </tr>
+
+            <!--</div>-->
+
+        </table>
+
+    </form>
+
+</header>
+
+
+<section id="homepage-flex-container-body">
+
+
+    <div class="deck">
+
+        <h1 class="Headline">Connect with all your friends!</h1>
+        <ul>
+            <li><strong>See photos and updates</strong> in your news feed</li>
+            <li><strong>Post your status for the world to see</strong> from your profile</li>
+            <li><strong>Get in touch with your friends</strong> by "friending them</li>
+            <li><strong>Like things</strong> because you're a positive person!</li>
+        </ul>
+
+    </div>
+
+
+    <form action="post" class="signup-form">
+        <table>
+
+            <tr>
+                <td>
+                    <h2>Sign Up</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="signup-first-name" name="signup-first-name" placeholder="First Name"/></td>
+
+                <td><input type="text" id="signup-last-name" name="signup-last-name" placeholder="Last Name"/></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="email" id="signup-email" placeholder="Email"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="password" id="signup-password" name="signup-password" placeholder="Password"/></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="password" id="signup-confirm-password" name="signup-confirm-password" placeholder="Confirm Password"/></td>
+            </tr>
+
+            <tr><td><h4>Birthday</h4></td></tr>
+
+            <tr>
+                <td colspan="2">
+                <select name="signup-birth-month" id="signup-birth-month">
+                    <option value="month">Month</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="March">March</option>
+                </select>
+            <!--</td>-->
+
+            <!--<td>-->
+                <select name="signup-birth-day" id="signup-birth-day">
+                    <option value="day">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            <!--</td>-->
+
+
+            <!--<td>-->
+                <select name="signup-birth-year" id="signup-birth-year">
+                    <option value="year">Year</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                </select>
+            </td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="1">
+                    <div id="radio-flexbox">
+                        <input id="radio-buttons" type="radio" name="gender" value="female" checked> <p>Female</p>
+
+                        <input id="radio-buttons" type="radio" name="gender" value="male"/> <p>Male</p>
+                     </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" value="Sign Up!"/></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+</section>
+
+
+</body>
+</html>
